@@ -1,8 +1,10 @@
 //Import All Routers Here
 import { Router } from "express";
-const router=Router()
+import { test } from "../controllers/index";
+const router = Router();
 
+router.get("/test", test);
 
 //Import Child Routes Here
 
-export default router
+export default router;
